@@ -1,5 +1,6 @@
 import React from 'react'
 import { Badge, Container, Dropdown, FormControl, Nav, Navbar } from 'react-bootstrap'
+import { FaShoppingCart} from "react-icons/fa"
 
 const Header = () => {
   return (
@@ -21,7 +22,7 @@ const Header = () => {
                     <Nav>
                         <Dropdown alignRight>
                             <Dropdown.Toggle variant="success">
-                                {/* <FaShoppingCart color="white" fontSize="25px"/> */}
+                                <FaShoppingCart color="white" fontSize="25px"/>
                                 <Badge>{10}</Badge>
 
                             </Dropdown.Toggle>
