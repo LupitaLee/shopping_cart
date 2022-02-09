@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, FormControl, Navbar } from 'react-bootstrap'
+import { Badge, Container, Dropdown, FormControl, Nav, Navbar } from 'react-bootstrap'
 
 const Header = () => {
   return (
@@ -7,7 +7,8 @@ const Header = () => {
         <Navbar bg="dark" variant="dark" style={{height: 80}}>
             <Container>
                 <Navbar.Brand>
-                    <a href='/'>  Shooping cart</a>
+                    <a href='/'>  Shooping Cart</a>
+                </Navbar.Brand>
                     <Navbar.Text className="search">
                         <FormControl
                         style={{width: 500}}
@@ -15,10 +16,24 @@ const Header = () => {
                          className='m-auto'
                         
                         />
-                           
-                     
                     </Navbar.Text>
-                </Navbar.Brand>
+
+                    <Nav>
+                        <Dropdown alignRight>
+                            <Dropdown.Toggle variant="success">
+                                {/* <FaShoppingCart color="white" fontSize="25px"/> */}
+                                <Badge>{10}</Badge>
+
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu style={{minWidth: 370}}>
+                                <span style={{padding:10}}>Cart is Empty!</span>
+
+                            </Dropdown.Menu>
+
+                        </Dropdown>
+                    </Nav>
+                
             </Container>
         </Navbar>
     </div>
