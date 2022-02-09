@@ -1,0 +1,6 @@
+a{
+  text-decoration: none !important;  
+  /* //it overlaps the style of react boostrap */
+  
+  color: inherit !important;
+}
