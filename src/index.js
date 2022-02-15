@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import Context from 'react-bootstrap/esm/AccordionContext';
+
+import Context from "/Users/lupita/Development/code/practice/shopping_cart/src/context/context.js"
 
 ReactDOM.render(
   <React.StrictMode>
+    <Context>
+
     <App />
+
+    </Context>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
