@@ -12,6 +12,9 @@ const context = ({children}) => {
         id: faker.datatype.uuid(),
         name:faker.commerce.productName(),
         price: faker.commerce.price(),
+        image: faker.random.image(),
+        instock: faker.random.arrayElement([0,3,5,6,7])
+
        
            
     }))
