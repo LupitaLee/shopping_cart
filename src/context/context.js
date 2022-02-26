@@ -15,7 +15,9 @@ const context = ({children}) => {
         image: faker.random.image(),
         instock: faker.random.arrayElement([0,3,5,6,7]),
         fastDelivery: faker.datatype.boolean(),
+        rating: faker.random.arrayElement([1,2,3,4,5])
         
+
 
        
            
