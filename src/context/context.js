@@ -12,7 +12,7 @@ const context = ({children}) => {
         id: faker.datatype.uuid(),
         name:faker.commerce.productName(),
         price: faker.commerce.price(),
-        image: faker.random.image(),
+        image: faker.image.image(),
         instock: faker.random.arrayElement([0,3,5,6,7]),
         fastDelivery: faker.datatype.boolean(),
         rating: faker.random.arrayElement([1,2,3,4,5])
@@ -22,6 +22,7 @@ const context = ({children}) => {
        
            
     }))
+    console.log(products)
     return <Cart.Provider>{children} </Cart.Provider> 
 
   return (
